@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gunongan & Pinto Khop — Wisata Sejarah Banda Aceh</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="#beranda" class="flex items-center gap-2">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/15">
+          <!-- simple icon -->
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 20V9.5L12 4l8 5.5V20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div class="leading-tight">
+          <div class="font-semibold">Heritage Aceh</div>
+          <div class="text-xs text-slate-300">Gunongan • Pinto Khop</div>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden items-center gap-6 md:flex">
+        <a class="text-sm text-slate-200 hover:text-white" href="#galeri">Galeri</a>
+        <a class="text-sm text-slate-200 hover:text-white" href="#tentang">Tentang</a>
+        <a class="text-sm text-slate-200 hover:text-white" href="#video">Video</a>
+        <a class="text-sm text-slate-200 hover:text-white" href="#paket">Paket Wisata</a>
+        <a class="text-sm text-slate-200 hover:text-white" href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="#paket" class="hidden rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200 md:inline-flex">
+          Lihat Paket
+        </a>
+        <!-- Mobile menu button -->
+        <button id="btnMenu" class="inline-flex items-center justify-center rounded-xl bg-white/10 p-2 ring-1 ring-white/15 hover:bg-white/15 md:hidden" aria-label="Buka menu">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="hidden border-t border-white/10 bg-slate-950/80 backdrop-blur md:hidden">
+      <div class="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+        <div class="grid gap-2">
+          <a class="rounded-xl px-3 py-2 text-sm hover:bg-white/10" href="#galeri">Galeri</a>
+          <a class="rounded-xl px-3 py-2 text-sm hover:bg-white/10" href="#tentang">Tentang</a>
+          <a class="rounded-xl px-3 py-2 text-sm hover:bg-white/10" href="#video">Video</a>
+          <a class="rounded-xl px-3 py-2 text-sm hover:bg-white/10" href="#paket">Paket Wisata</a>
+          <a class="rounded-xl px-3 py-2 text-sm hover:bg-white/10" href="#kontak">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="beranda" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute -top-24 left-1/2 h-72 w-[52rem] -translate-x-1/2 rounded-full bg-indigo-500/20 blur-3xl"></div>
+      <div class="absolute -bottom-24 left-1/3 h-72 w-[52rem] -translate-x-1/2 rounded-full bg-fuchsia-500/10 blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20">
+      <div class="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs text-slate-200 ring-1 ring-white/15">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            Wisata Sejarah • Banda Aceh
+          </p>
+          <h1 class="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+            Jelajahi <span class="text-white">Gunongan</span> & <span class="text-white">Pinto Khop</span>
+          </h1>
+          <p class="mt-4 text-slate-300">
+            Dua ikon peninggalan Kesultanan Aceh yang memadukan arsitektur unik, cerita kerajaan,
+            dan spot foto yang estetik untuk perjalanan sejarah kamu.
+          </p>
+
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="#paket" class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-slate-200">
+              Pesan Paket
+            </a>
+            <a href="#video" class="rounded-xl bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/15 hover:bg-white/15">
+              Tonton Video
+            </a>
+          </div>
+
+          <div class="mt-8 grid grid-cols-3 gap-3">
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="text-2xl font-bold">2</div>
+              <div class="mt-1 text-xs text-slate-300">Situs Utama</div>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="text-2xl font-bold">3+</div>
+              <div class="mt-1 text-xs text-slate-300">Paket Tur</div>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="text-2xl font-bold">HD</div>
+              <div class="mt-1 text-xs text-slate-300">Galeri Foto</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collage / Banner Foto (foto-foto kegiatan wisata) -->
+        <div id="galeri" class="rounded-3xl bg-white/5 p-3 ring-1 ring-white/10">
+          <div class="grid gap-3 sm:grid-cols-2">
+            <!-- Ganti URL gambar dengan foto kalian sendiri (local / drive / dsb) -->
+            <figure class="relative overflow-hidden rounded-2xl">
+              <img
+                class="h-52 w-full object-cover sm:h-56"
+                src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80"
+                alt="Aktivitas wisata sejarah (ilustrasi)"/>
+              <figcaption class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-xs">
+                Jelajah situs & storytelling sejarah
+              </figcaption>
+            </figure>
+
+            <figure class="relative overflow-hidden rounded-2xl">
+              <img
+                class="h-52 w-full object-cover sm:h-56"
+                src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1200&q=80"
+                alt="Spot arsitektur (ilustrasi)"/>
+              <figcaption class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-xs">
+                Arsitektur unik & spot foto
+              </figcaption>
+            </figure>
+
+            <figure class="relative overflow-hidden rounded-2xl sm:col-span-2">
+              <img
+                class="h-56 w-full object-cover sm:h-64"
+                src="https://images.unsplash.com/photo-1524230572899-a752b383584f?auto=format&fit=crop&w=1200&q=80"
+                alt="Suasana taman bersejarah (ilustrasi)"/>
+              <figcaption class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-xs">
+                Suasana taman bersejarah yang tenang
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between px-1">
+            <p class="text-xs text-slate-400">
+              *Gambar contoh (silakan ganti dengan foto Gunongan & Pinto Khop).
+            </p>
+            <a class="text-xs font-semibold text-white/90 hover:text-white" href="#tentang">Lihat detail →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="mx-auto max-w-7xl px-4 py-14 sm:px-6">
+    <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
+      <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+        <h2 class="text-xl font-bold">Tentang Gunongan</h2>
+        <p class="mt-3 text-slate-300">
+          Gunongan berada di kawasan taman bersejarah di Banda Aceh dan sering dikaitkan dengan masa Kesultanan Aceh,
+          dikenal sebagai struktur putih berbentuk unik di kompleks taman.
+        </p>
+        <p class="mt-3 text-sm text-slate-400">
+          Referensi ringkas: kawasan Gunongan (Gunongan Historical Park) dan keterkaitannya dengan taman/pleasure garden. :contentReference[oaicite:2]{index=2}
+        </p>
+      </div>
+
+      <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+        <h2 class="text-xl font-bold">Tentang Pinto Khop</h2>
+        <p class="mt-3 text-slate-300">
+          Di kompleks yang sama terdapat Pinto Khop, sebuah gerbang berkubah yang menjadi penghubung taman dengan area istana,
+          dan kini menjadi daya tarik wisata serta simbol warisan arsitektur Aceh.
+        </p>
+        <p class="mt-3 text-sm text-slate-400">
+          Referensi ringkas: deskripsi Pinto Khop sebagai gerbang di kawasan Taman Sari Gunongan. :contentReference[oaicite:3]{index=3}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video (Link video) -->
+  <section id="video" class="mx-auto max-w-7xl px-4 pb-14 sm:px-6">
+    <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <h2 class="text-xl font-bold">Video Promosi</h2>
+          <p class="mt-2 text-slate-300">
+            Tonton video referensi yang kamu kirim (YouTube).
+          </p>
+        </div>
+        <a
+          class="rounded-xl bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-white/15 hover:bg-white/15"
+          href="https://youtu.be/buO7B6kTSVE"
+          target="_blank" rel="noopener">
+          Buka di YouTube ↗
+        </a>
+      </div>
+
+      <div class="mt-6 aspect-video overflow-hidden rounded-2xl ring-1 ring-white/10">
+        <iframe
+          class="h-full w-full"
+          src="https://www.youtube.com/embed/buO7B6kTSVE"
+          title="Video Promosi Wisata"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paket Wisata (daftar paket wisata disertai image dan deskripsi) -->
+  <section id="paket" class="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-bold">Paket Wisata Sejarah</h2>
+        <p class="mt-2 text-slate-300">
+          Pilih paket yang cocok: singkat, kombo, atau sunset tour.
+        </p>
+      </div>
+      <button
+        id="btnOpenModal"
+        class="hidden rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200 sm:inline-flex">
+        Pesan Sekarang
+      </button>
+    </div>
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Card 1 -->
+      <article class="group overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+        <div class="overflow-hidden">
+          <img class="h-44 w-full object-cover transition group-hover:scale-105"
+               src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80"
+               alt="Paket Tur Gunongan (ilustrasi)"/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold">Tur Gunongan Heritage</h3>
+            <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-xs text-emerald-200 ring-1 ring-emerald-400/20">2 Jam</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Jelajah struktur Gunongan, cerita kawasan taman, dan spot foto arsitektur.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Guide + storytelling</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Foto spot rekomendasi</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Cocok untuk tugas kampus</li>
+          </ul>
+          <div class="mt-5 flex items-center justify-between">
+            <div>
+              <div class="text-xs text-slate-400">Mulai dari</div>
+              <div class="text-lg font-bold">Rp 35.000</div>
+            </div>
+            <button data-paket="Tur Gunongan Heritage" class="btnPesan rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200">
+              Pesan
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="group overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+        <div class="overflow-hidden">
+          <img class="h-44 w-full object-cover transition group-hover:scale-105"
+               src="https://images.unsplash.com/photo-1508599589929-87a0c0c1f2a5?auto=format&fit=crop&w=1200&q=80"
+               alt="Paket Tur Pinto Khop (ilustrasi)"/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold">Jejak Pinto Khop</h3>
+            <span class="rounded-full bg-indigo-500/15 px-3 py-1 text-xs text-indigo-200 ring-1 ring-indigo-400/20">1.5 Jam</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Eksplor gerbang berkubah Pinto Khop dan narasi hubungan taman–istana.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-indigo-300">✓</span> Fokus arsitektur & sejarah</li>
+            <li class="flex gap-2"><span class="text-indigo-300">✓</span> Spot foto “ikon Aceh”</li>
+            <li class="flex gap-2"><span class="text-indigo-300">✓</span> Rekomendasi waktu terbaik</li>
+          </ul>
+          <div class="mt-5 flex items-center justify-between">
+            <div>
+              <div class="text-xs text-slate-400">Mulai dari</div>
+              <div class="text-lg font-bold">Rp 30.000</div>
+            </div>
+            <button data-paket="Jejak Pinto Khop" class="btnPesan rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200">
+              Pesan
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="group overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+        <div class="overflow-hidden">
+          <img class="h-44 w-full object-cover transition group-hover:scale-105"
+               src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80"
+               alt="Paket Kombo Heritage (ilustrasi)"/>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold">Kombo Heritage (Gunongan + Pinto Khop)</h3>
+            <span class="rounded-full bg-fuchsia-500/15 px-3 py-1 text-xs text-fuchsia-200 ring-1 ring-fuchsia-400/20">3 Jam</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Paket lengkap: dua situs utama + sesi foto + ringkasan catatan sejarah untuk dokumentasi.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-fuchsia-300">✓</span> Rute efisien & nyaman</li>
+            <li class="flex gap-2"><span class="text-fuchsia-300">✓</span> Bonus checklist konten</li>
+            <li class="flex gap-2"><span class="text-fuchsia-300">✓</span> Cocok untuk keluarga/kelas</li>
+          </ul>
+          <div class="mt-5 flex items-center justify-between">
+            <div>
+              <div class="text-xs text-slate-400">Mulai dari</div>
+              <div class="text-lg font-bold">Rp 55.000</div>
+            </div>
+            <button data-paket="Kombo Heritage" class="btnPesan rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200">
+              Pesan
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="mt-6 text-xs text-slate-400">
+      Catatan: Dokumen tugas meminta daftar paket wisata dengan image + deskripsi, menu aplikasi, link video, dan galeri foto. :contentReference[oaicite:4]{index=4}
+    </p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
+    <div class="grid gap-6 lg:grid-cols-3">
+      <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 lg:col-span-2">
+        <h2 class="text-xl font-bold">Hubungi & Lokasi</h2>
+        <p class="mt-2 text-slate-300">
+          Untuk pemesanan rombongan atau kebutuhan tugas kampus, bisa hubungi admin.
+        </p>
+
+        <div class="mt-6 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+            <div class="text-xs text-slate-400">WhatsApp</div>
+            <div class="mt-1 font-semibold">+62 8xx-xxxx-xxxx</div>
+          </div>
+          <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+            <div class="text-xs text-slate-400">Email</div>
+            <div class="mt-1 font-semibold">info@heritageaceh.id</div>
+          </div>
+        </div>
+
+        <div class="mt-6 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+          <div class="text-xs text-slate-400">Alamat (isi sesuai kebutuhan)</div>
+          <div class="mt-1 text-slate-200">
+            Banda Aceh, Aceh • Dekat kawasan wisata sejarah
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+        <h3 class="font-bold">Jam Kunjungan</h3>
+        <p class="mt-2 text-sm text-slate-300">
+          Rekomendasi: sore menjelang sunset untuk suasana lebih nyaman.
+        </p>
+        <div class="mt-5 space-y-3 text-sm">
+          <div class="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3 ring-1 ring-white/10">
+            <span>Senin–Jumat</span><span class="text-slate-200">08.00–17.00</span>
+          </div>
+          <div class="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3 ring-1 ring-white/10">
+            <span>Sabtu–Minggu</span><span class="text-slate-200">08.00–18.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-slate-950">
+    <div class="mx-auto max-w-7xl px-4 py-8 text-sm text-slate-400 sm:px-6">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <p>© <span id="year"></span> Heritage Aceh — Gunongan & Pinto Khop</p>
+        <p>UI promosi wisata (Tailwind • modern • responsif)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Pemesanan (opsional, tapi bikin UI lebih lengkap) -->
+  <div id="modal" class="fixed inset-0 z-[60] hidden">
+    <div id="backdrop" class="absolute inset-0 bg-black/70"></div>
+    <div class="relative mx-auto flex min-h-full max-w-2xl items-center px-4 py-10">
+      <div class="w-full rounded-3xl bg-slate-900 p-6 ring-1 ring-white/10">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-lg font-bold">Form Pemesanan Paket</h3>
+            <p class="mt-1 text-sm text-slate-300">Isi data, lalu klik “Kirim Pesanan”.</p>
+          </div>
+          <button id="btnCloseModal" class="rounded-xl bg-white/10 p-2 ring-1 ring-white/15 hover:bg-white/15" aria-label="Tutup">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <form id="formPesan" class="mt-6 grid gap-4 sm:grid-cols-2">
+          <div class="sm:col-span-2">
+            <label class="text-xs text-slate-300">Paket dipilih</label>
+            <input id="paketDipilih" name="paket" class="mt-1 w-full rounded-xl bg-white/5 px-4 py-3 text-sm text-white ring-1 ring-white/10 outline-none" readonly />
+          </div>
+
+          <div>
+            <label class="text-xs text-slate-300">Nama</label>
+            <input required name="nama" placeholder="Nama lengkap"
+              class="mt-1 w-full rounded-xl bg-white/5 px-4 py-3 text-sm text-white ring-1 ring-white/10 outline-none focus:ring-white/20"/>
+          </div>
+
+          <div>
+            <label class="text-xs text-slate-300">No. HP/WA</label>
+            <input required name="hp" placeholder="08xxxxxxxxxx"
+              class="mt-1 w-full rounded-xl bg-white/5 px-4 py-3 text-sm text-white ring-1 ring-white/10 outline-none focus:ring-white/20"/>
+          </div>
+
+          <div>
+            <label class="text-xs text-slate-300">Tanggal Kunjungan</label>
+            <input required type="date" name="tanggal"
+              class="mt-1 w-full rounded-xl bg-white/5 px-4 py-3 text-sm text-white ring-1 ring-white/10 outline-none focus:ring-white/20"/>
+          </div>
+
+          <div>
+            <label class="text-xs text-slate-300">Jumlah Orang</label>
+            <input required type="number" min="1" name="jumlah" placeholder="1"
+              class="mt-1 w-full rounded-xl bg-white/5 px-4 py-3 text-sm text-white ring-1 ring-white/10 outline-none focus:ring-white/20"/>
+          </div>
+
+          <div class="sm:col-span-2">
+            <label class="text-xs text-slate-300">Catatan</label>
+            <textarea name="catatan" rows="3" placeholder="Contoh: rombongan kelas, minta sesi foto, dsb."
+              class="mt-1 w-full rounded-xl bg-white/5 px-4 py-3 text-sm text-white ring-1 ring-white/10 outline-none focus:ring-white/20"></textarea>
+          </div>
+
+          <div class="sm:col-span-2 flex flex-wrap items-center justify-end gap-3 pt-2">
+            <button type="button" id="btnCancel"
+              class="rounded-xl bg-white/10 px-5 py-3 text-sm font-semibold ring-1 ring-white/15 hover:bg-white/15">
+              Batal
+            </button>
+            <button type="submit"
+              class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-slate-200">
+              Kirim Pesanan
+            </button>
+          </div>
+
+          <p class="sm:col-span-2 text-xs text-slate-400">
+            *Demo UI: saat submit akan menampilkan ringkasan (tanpa backend).
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile nav
+    const btnMenu = document.getElementById("btnMenu");
+    const mobileNav = document.getElementById("mobileNav");
+    btnMenu?.addEventListener("click", () => {
+      mobileNav.classList.toggle("hidden");
+    });
+
+    // Modal
+    const modal = document.getElementById("modal");
+    const backdrop = document.getElementById("backdrop");
+    const btnCloseModal = document.getElementById("btnCloseModal");
+    const btnCancel = document.getElementById("btnCancel");
+    const btnOpenModal = document.getElementById("btnOpenModal");
+    const paketDipilih = document.getElementById("paketDipilih");
+
+    function openModal(paketName = "—") {
+      paketDipilih.value = paketName;
+      modal.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+    }
+    function closeModal() {
+      modal.classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    btnOpenModal?.addEventListener("click", () => openModal("Pilih paket dulu"));
+    backdrop?.addEventListener("click", closeModal);
+    btnCloseModal?.addEventListener("click", closeModal);
+    btnCancel?.addEventListener("click", closeModal);
+
+    // Buttons "Pesan" on cards
+    document.querySelectorAll(".btnPesan").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const paket = btn.getAttribute("data-paket") || "—";
+        openModal(paket);
+      });
+    });
+
+    // Demo submit
+    document.getElementById("formPesan")?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const ringkas =
+        `Pesanan terkirim!\n\n` +
+        `Paket: ${data.get("paket")}\n` +
+        `Nama: ${data.get("nama")}\n` +
+        `HP: ${data.get("hp")}\n` +
+        `Tanggal: ${data.get("tanggal")}\n` +
+        `Jumlah: ${data.get("jumlah")}\n` +
+        `Catatan: ${data.get("catatan") || "-"}`;
+
+      alert(ringkas);
+      form.reset();
+      closeModal();
+    });
+
+    // Close modal with ESC
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+    });
+  </script>
+</body>
+</html>
